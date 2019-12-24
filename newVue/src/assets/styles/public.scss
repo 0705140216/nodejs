@@ -1,0 +1,147 @@
+.search-area {
+    margin-bottom: 15px;
+    padding-top: 20px;
+    background: #fff;
+}
+
+.content-list {
+    position: relative;
+    width: 100%;
+}
+
+.page-area {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.info-container{
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+  .info-title{
+    font-size: 16px;
+    color: #777;
+    font-weight: bold;
+
+  }
+  .info-main{
+
+  }
+
+}
+
+// 自定义进度条颜色
+#nprogress .bar {
+  z-index: 100000;
+  background: rgb(36, 154, 0) !important;
+}
+
+.notification-global{
+  color: $yellow;
+  font-weight: bold;
+  background: rgba(235, 243, 226, 0.925);
+  z-index: 9000;
+  .el-notification__content{
+    //word-break: keep-all;
+    color: $yellow;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
+//当前位置
+.current-position{
+  margin-top: -20px;
+  //padding-left: 35px;
+  color: #999;
+  background: $body-color;
+  padding-bottom: 20px;
+  margin-bottom:20px;
+  display: flex;
+}
+
+//操作区域
+.sta-operate{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  &>.no-form{
+    padding: 0 35px 20px;
+    color: #777;
+    &>span{
+      padding-right: 30px;
+      &.sta-count{
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  }
+}
+
+//表单样式
+.el-form{
+  .form-tip {
+    color: #999;
+    font-size: 12px;
+    font-style: normal;
+    padding-left: 10px;
+  }
+  .group-form-divided{
+    margin-bottom: 20px;
+    margin-top: 40px;
+    &:nth-of-type(1){
+      margin-top: 0;
+    }
+    .name{
+      font-size: 16px;
+      font-weight: bold;
+      color: #777;
+    }
+    .tips{
+      padding-left: 10px;
+      font-weight: normal;
+    }
+  }
+}
+
+// 自定义滚动条样式
+*{
+  &::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background: rgba(51, 51, 51, 0.3);
+    &:active{
+      background-color: rgba(51, 51, 51, 0.2);
+    }
+  }
+  &::-webkit-scrollbar-track{
+    border-radius: 8px;
+    background: transparent;
+  }
+}
+
+// 全局列表页状态点类
+.g-list-status{
+  &-0{
+    color: #ed4014;
+  }
+  &-1{
+    color: #19be6b;
+  }
+  &-2{
+    color: #409effd4;
+  }
+}

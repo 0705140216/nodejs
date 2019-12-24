@@ -1,0 +1,47 @@
+@import './mixins.scss';
+
+$font-color: #4a4a4a;
+$header-height: 60px;
+$footer-height: 1.30666666rem;
+
+$border-c: #ebeef5;
+$table-hover:#f5f7fa;
+
+// base color
+$blue:#324157;
+$light-blue:#3A71A8;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#EB7347;
+$panGreen: #3EBFC7;
+$gray-title: #909399;
+
+// sidebar
+$menuText:#CCCCCC;
+$menuActiveText:#3EBFC7;
+$subMenuActiveText:#3EBFC7; // https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#333;
+$menuHover:#222;
+$subMenuBg:#101010;
+
+$menuFont: 15px;
+$subMenuFont: 14px;
+
+$sideBarWidth: 210px;
+
+// body background-color
+$body-color: #F3F3F5;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  sideBarWidth: $sideBarWidth;
+}

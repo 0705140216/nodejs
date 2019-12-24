@@ -1,0 +1,10 @@
+SELECT * FROM tb_user;   获取全部列表语法
+
+
+DELETE FROM tb_user WHERE id=19;    根据ID删除语法
+
+
+INSERT INTO tb_user(account,pwd) VALUES("lili","123456"); 新增语法
+
+
+UPDATE tb_user SET account="xiaodai" where id=29;//修改语法
